@@ -48,8 +48,8 @@
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
-          var deviceName = byCodes('41931-7');
-          var deviceModel = byCodes('41927-5');
+          //var deviceName = byCodes('41931-7');
+          //var deviceModel = byCodes('41927-5');
 
           var p = defaultPatient();
           p.birthdate = dobStr;
@@ -94,8 +94,8 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
-      <!--deviceName: {value: ''},
-      deviceModel: {value: ''},-->
+     // deviceName: {value: ''},
+    //  deviceModel: {value: ''},
       
     };
   }
