@@ -49,7 +49,7 @@
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
           var deviceName = byCodes('4193-7');
-          var deviceModel = byCodes('41927-5')
+          var deviceModel = byCodes('41927-5');
 
           var p = defaultPatient();
           p.birthdate = dobStr;
