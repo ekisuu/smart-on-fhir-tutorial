@@ -162,6 +162,8 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+    $('#deviceName').html(p.deviceName);
+    $('#deviceModel').html(p.deviceModel);
   };
 
 })(window);
