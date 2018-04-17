@@ -94,8 +94,8 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
-      deviceName: {value: ''},
-      deviceModel: {value: ''},
+      <!--deviceName: {value: ''},
+      deviceModel: {value: ''},-->
       
     };
   }
