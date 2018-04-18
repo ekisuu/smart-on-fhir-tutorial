@@ -69,7 +69,7 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
-          p.oralTemp = getQuantityValueAndUnit(ldl[0]);
+          p.oralTemp = getQuantityValueAndUnit(oralTemp[0]);
          
 
           ret.resolve(p);
