@@ -49,7 +49,7 @@
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
-          var oralTemp = byCodes('8310-5');
+          var oralTemp = byCodes('85353-1');
           
 
           var p = defaultPatient();
