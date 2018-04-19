@@ -70,7 +70,7 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
-          p.oralTemp = getQuantityValueAndUnit(oralTemp[0]);
+          p.oralTemp = obv;
          
 
           ret.resolve(p);
