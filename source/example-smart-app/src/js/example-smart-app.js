@@ -23,6 +23,10 @@
                       }
                     }
                   });
+        var obv2 = smart.patient.api.fetchAll(
+          {
+            type : 'Observation',
+          })
 
         $.when(pt, obv).fail(onError);
 
@@ -49,7 +53,9 @@
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
-          var heartRate = byCodes('8867-4');
+          //var heartRate = byCodes('8867-4');
+          var heartRate = obv2;
+         
           
 
           var p = defaultPatient();
