@@ -92,7 +92,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.heartRate = getQuantityValueAndUnit(heartRate[0]);
-         // p.deviceModel = deviceModel;
+          p.deviceModel = deviceModel;
           
 
           ret.resolve(p);
