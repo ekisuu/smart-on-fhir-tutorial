@@ -35,7 +35,7 @@
             type : 'Device',
             model     : ''
           })*/
-          var deviceModel = 'Philips MX800';
+         
          /*$.when(pt, device).done(function(patient, device) {
             deviceID = device.identifier;
             
@@ -67,6 +67,7 @@
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
           var heartRate = byCodes2('8867-4');
+           var deviceModel = Device.model;
           
           
          
