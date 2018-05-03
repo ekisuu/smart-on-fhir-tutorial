@@ -67,7 +67,7 @@
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
           var heartRate = byCodes('8867-4');
-          // var deviceModel = Device.model;
+          var deviceModel = Device.model;
           
           
          
