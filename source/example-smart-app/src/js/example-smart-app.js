@@ -28,12 +28,10 @@
             type : 'Device',
             id     : ''
           })
-          
+          var deviceID;
          $.when(pt, device).done(function(patient, device) {
-           var deviceID = device.identifier.type;
-           var d = defaultDevice();
-           d.deviceID = deviceID;
-            ret.resolve(d);
+            deviceID = device.identifier;
+            
          }
         $.when(pt, obv).fail(onError);
 
@@ -86,6 +84,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.heartRate = getQuantityValueAndUnit(heartRate[0]);
+          p.deviceID = deviceID;
           
 
           ret.resolve(p);
