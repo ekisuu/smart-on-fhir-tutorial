@@ -189,7 +189,7 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#heartRate').html(p.heartRate);
-    // $('#deviceModel').html(p.deviceModel);
+     $('#deviceModel').html(p.deviceModel);
      
    
   };
