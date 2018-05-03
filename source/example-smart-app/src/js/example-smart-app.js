@@ -25,8 +25,8 @@
                   });
         var device = smart.patient.api.fetchAll(
           {
-            'type' : 'Device',
-            'versionId'     : 0
+            type : 'Device',
+            versionId     : '0'
           })
           
          $.when(pt, device).done(function(patient, device) {
