@@ -26,9 +26,9 @@
         var device = smart.patient.api.fetchAll(
           {
             type : 'Device',
-            id     : ''
+            model     : ''
           })
-          var deviceID;
+          var deviceModel;
          /*$.when(pt, device).done(function(patient, device) {
             deviceID = device.identifier;
             
@@ -84,7 +84,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.heartRate = getQuantityValueAndUnit(heartRate[0]);
-          p.deviceID = deviceID;
+          p.deviceModel = 'Philips MX800';
           
 
           ret.resolve(p);
@@ -180,7 +180,7 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#heartRate').html(p.heartRate);
-     $('#deviceID').html(p.deviceID);
+     $('#deviceModel').html(p.deviceModel);
    
   };
 
