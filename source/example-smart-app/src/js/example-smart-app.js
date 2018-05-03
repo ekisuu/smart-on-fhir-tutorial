@@ -23,11 +23,18 @@
                       }
                     }
                   });
-        var obv2 = smart.patient.api.fetchAll(
+        var device = smart.patient.api.fetchAll(
           {
-            type : 'Observation',
+            'type' : 'Device',
+            'versionId'     : 0
           })
-
+          
+         $.when(pt, device).done(function(patient, device) {
+           var deviceID = device.VersionId;
+           var d = defaultDevice();
+           d.deviceID = deviceID;
+            ret.resolve(d);
+         }
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
@@ -56,6 +63,7 @@
           var ldl = byCodes('2089-1');
           var heartRate = byCodes2('8867-4');
           
+          
          
           
 
@@ -78,7 +86,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.heartRate = getQuantityValueAndUnit(heartRate[0]);
-         
+          
 
           ret.resolve(p);
         });
@@ -173,6 +181,7 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#heartRate').html(p.heartRate);
+     $('#deviceID').html(d.deviceID);
    
   };
 
