@@ -22,7 +22,14 @@
                               
                       }
                     }
-                  });
+                  }
+                  {
+                  type : 'Device',
+                  query:{
+                            model     : ''
+                         } 
+                   }                         
+                  );
         /*var device = smart.patient.api.fetchAll(
           {
             type : 'Device',
