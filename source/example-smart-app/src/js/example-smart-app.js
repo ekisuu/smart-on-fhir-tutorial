@@ -45,7 +45,6 @@
 
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
-          var byCodes2 = smart.byCodes(obv2 , 'http://loinc.org|8867-4'
           var gender = patient.gender;
           var dob = new Date(patient.birthDate);
           var day = dob.getDate();
@@ -67,7 +66,7 @@
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
-          var heartRate = byCodes2('8867-4');
+          var heartRate = byCodes('8867-4');
           // var deviceModel = Device.model;
           
           
