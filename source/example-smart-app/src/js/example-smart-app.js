@@ -23,12 +23,12 @@
                       }
                     }
                   }
-                  //{
-                  /*type : 'Device',
+                  {
+                  type : 'Device',
                   query:{
                             model     : ''
                          } 
-                   }    */
+                   }    
                                              
                   );
         /*var device = smart.patient.api.fetchAll(
