@@ -29,10 +29,10 @@
             id     : ''
           })
           var deviceID;
-         $.when(pt, device).done(function(patient, device) {
+         /*$.when(pt, device).done(function(patient, device) {
             deviceID = device.identifier;
             
-         }
+         }*/
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
