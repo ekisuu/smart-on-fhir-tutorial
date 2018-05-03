@@ -24,11 +24,12 @@
                     }
                   }
                   {
-                  type : 'Device',
+                  /*type : 'Device',
                   query:{
                             model     : ''
                          } 
-                   }                         
+                   }    */
+                                             
                   );
         /*var device = smart.patient.api.fetchAll(
           {
@@ -67,7 +68,7 @@
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
           var heartRate = byCodes2('8867-4');
-           var deviceModel = Device.model;
+          // var deviceModel = Device.model;
           
           
          
@@ -92,7 +93,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.heartRate = getQuantityValueAndUnit(heartRate[0]);
-          p.deviceModel = deviceModel;
+         // p.deviceModel = deviceModel;
           
 
           ret.resolve(p);
@@ -120,7 +121,7 @@
       ldl: {value: ''},
       hdl: {value: ''},
       heartRate : {value: ''},
-      deviceModel : {value: ''},
+      //deviceModel : {value: ''},
       
       
     };
@@ -189,7 +190,8 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#heartRate').html(p.heartRate);
-     $('#deviceModel').html(p.deviceModel);
+    // $('#deviceModel').html(p.deviceModel);
+     
    
   };
 
