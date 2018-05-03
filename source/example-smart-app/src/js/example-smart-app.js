@@ -23,7 +23,7 @@
                       }
                     }
                   }
-                  {
+                  //{
                   /*type : 'Device',
                   query:{
                             model     : ''
