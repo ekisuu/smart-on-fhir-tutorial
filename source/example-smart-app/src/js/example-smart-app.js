@@ -180,7 +180,7 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#heartRate').html(p.heartRate);
-     $('#deviceID').html(d.deviceID);
+     $('#deviceID').html(p.deviceID);
    
   };
 
