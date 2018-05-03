@@ -120,7 +120,7 @@
       ldl: {value: ''},
       hdl: {value: ''},
       heartRate : {value: ''},
-      //deviceModel : {value: ''},
+      deviceModel : {value: ''},
       
       
     };
