@@ -23,11 +23,11 @@
                       }
                     }
                   });
-        var device = smart.patient.api.fetchAll(
+        /*var device = smart.patient.api.fetchAll(
           {
             type : 'Device',
             model     : ''
-          })
+          })*/
           var deviceModel;
          /*$.when(pt, device).done(function(patient, device) {
             deviceID = device.identifier;
@@ -112,6 +112,7 @@
       ldl: {value: ''},
       hdl: {value: ''},
       heartRate : {value: ''},
+      deviceModel : {value: ''},
       
       
     };
