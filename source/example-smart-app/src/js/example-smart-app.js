@@ -28,7 +28,7 @@
             type : 'Device',
             model     : ''
           })*/
-          var deviceModel;
+          var deviceModel = 'Philips MX800';
          /*$.when(pt, device).done(function(patient, device) {
             deviceID = device.identifier;
             
@@ -84,11 +84,11 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.heartRate = getQuantityValueAndUnit(heartRate[0]);
-          p.deviceModel = 'Philips MX800';
+          p.deviceModel = deviceModel;
           
 
           ret.resolve(p);
-        });
+        })
       } else {
         onError();
       }
